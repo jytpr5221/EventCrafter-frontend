@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = 'http://localhost:8001';
+const baseURL = 'https://eventcrafterbackend.onrender.com'
 
  const user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
 
