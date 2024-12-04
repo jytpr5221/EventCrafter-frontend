@@ -5,7 +5,7 @@ import UserContextProvider from './context/userContextProvider.jsx';
 import Layout from './components/layout/Layout.jsx';
 import Home from './components/Home/Home.jsx';
 import Events from './components/events/Events.jsx';
-import Organizations from './components/organizations/organizations.jsx';
+import Organizations from './components/organizations/Organizations.jsx';
 import Welcome from './components/welcome/Welcome.jsx';
 import OrganizerSignin from './components/authentication/OrganizerSignin.jsx';
 import OrganizerSignup from './components/authentication/OrganizerSignup.jsx';
