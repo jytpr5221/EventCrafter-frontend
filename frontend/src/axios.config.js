@@ -11,4 +11,4 @@ const baseURL = 'https://eventcrafterbackend.onrender.com'
   }
 });
 
-export default axiosInstance;
+export default axiosInstance
