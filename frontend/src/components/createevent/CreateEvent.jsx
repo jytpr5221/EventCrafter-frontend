@@ -30,9 +30,9 @@ function CreateEvent() {
             const org=JSON.parse(localStorage.getItem('user'))
             org.created.push(response.event._id)
             localStorage.setItem('user',JSON.stringify(org))
-            console.log('event successfully created')
+            //console.log('event successfully created')
         } catch (error) {
-            console.log('some error occurred')
+            //console.log('some error occurred')
         }
     }
     return (

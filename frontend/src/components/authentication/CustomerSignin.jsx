@@ -22,7 +22,7 @@ function CustomerSignin() {
         password,
       });
 
-      console.log("signin response", response);
+      //console.log("signin response", response);
       setUser(response.data);  
       localStorage.setItem("user", JSON.stringify(response.data));
 

@@ -25,7 +25,7 @@ function OrganizerSignup() {
         password,
       });
 
-      console.log(response);
+      //console.log(response);
       alert("User Registered! Sign in to continue");
       navigate('/organizer/signin')
 

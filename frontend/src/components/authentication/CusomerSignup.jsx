@@ -26,7 +26,7 @@ function CustomerSignup() {
         password,
       });
 
-      console.log(response);
+      //console.log(response);
       alert("User Registered! Sign in to continue");
       navigate('/customer/signin');
     } catch (error) {

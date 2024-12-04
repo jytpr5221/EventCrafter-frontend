@@ -10,7 +10,7 @@ function Organizations() {
     const fetchOrgs = async () => {
       try {
         const response = await axiosInstance.get('/org');
-        console.log(response);
+        //console.log(response);
         setOrgs(response.data);
       } catch (error) {
         console.error('Error fetching organizations:', error);

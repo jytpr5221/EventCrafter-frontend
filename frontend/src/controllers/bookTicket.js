@@ -1,11 +1,11 @@
 import axiosInstance from '../axios.config.js';
 
 const bookTicket = async (ticketId) => {
-  console.log("Ticket ID:", ticketId);
+  //console.log("Ticket ID:", ticketId);
   try {
     const response = await axiosInstance.post(`/events/book-ticket/${ticketId}`);
     alert('Successfully registered!');
-    console.log(response);
+    //console.log(response);
 
     const user = JSON.parse(localStorage.getItem('user')) || null;
     if (user) {

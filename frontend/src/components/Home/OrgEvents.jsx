@@ -4,7 +4,7 @@ import { useState,useEffect } from "react";
 
 function OrgEvents({ eventid }) {
     const [event, setEvent] = useState(null);
-    console.log(eventid)
+    //console.log(eventid)
     
   function getDate(dateString) {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };

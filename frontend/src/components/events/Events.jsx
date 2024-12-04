@@ -9,10 +9,10 @@ function Events() {
     const getEvents = async () => {
       try {
         const response = await axiosInstance.get("/events/allEvents");
-        console.log(response.data);
+        //console.log(response.data);
         setEvents(response.data);
       } catch (error) {
-        console.log("Server refused to connect");
+        //console.log("Server refused to connect");
       }
     };
 

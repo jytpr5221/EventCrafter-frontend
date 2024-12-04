@@ -11,7 +11,7 @@ const createNewEvent = async({title,type,availableTickets,eventDate,ticketsClose
             title,
             type
         })
-        console.log(response)
+        //console.log(response)
         alert(response.data._message )
         return response.data
     } catch (error) {
