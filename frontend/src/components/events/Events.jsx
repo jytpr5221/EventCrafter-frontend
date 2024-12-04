@@ -4,24 +4,39 @@ import Event from "./Event.jsx";
 
 function Events() {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getEvents = async () => {
       try {
         const response = await axiosInstance.get("/events/allEvents");
-        //console.log(response.data);
         setEvents(response.data);
+        setLoading(false);  
+
       } catch (error) {
-        //console.log("Server refused to connect");
-      }
-    };
+        setLoading(false);  
+        console.error("Error fetching events:", error);
+
+      } 
+     };
 
     getEvents();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="vh-100 d-flex justify-content-center align-items-center">
+        <div className="text-center text-white">
+          <p className="fs-3 fw-medium text-warning">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
       {events.length > 0 ? (
-        events.map((event) => <Event key={event.id} event={event} />)
+        events.map((event) => <Event key={event._id} event={event} />)
       ) : (
         <div className="vh-100 d-flex justify-content-center align-items-center">
           <div className="text-center text-white">

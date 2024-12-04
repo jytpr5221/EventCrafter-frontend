@@ -30,8 +30,7 @@ function Orgs({ org }) {
         <div>
         <div>
         <span className='text-info fw-semibold'>Organization ID : </span> {org._id}
-      </div>
-      
+      </div> 
       <div>
         <span className='text-info fw-semibold'>No. of Events  :</span> {org.created ? org.created.length : 0}
       </div>
