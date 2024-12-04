@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import UserContextProvider from './context/userContextProvider.jsx';
 import Layout from './components/layout/Layout.jsx';
 import Home from './components/Home/Home.jsx';
-import Events from './components/events/events.jsx';
+import Events from './components/events/Events.jsx';
 import Organizations from './components/organizations/organizations.jsx';
 import Welcome from './components/welcome/Welcome.jsx';
 import OrganizerSignin from './components/authentication/OrganizerSignin.jsx';
