@@ -1,10 +1,10 @@
-<---------------------------- Event Management Project -------------------------------->
+# Event Management Project 
 
-<---- Overview --->
+## Overview 
 EventCrafter is a comprehensive event management system designed to cater to both organizers and customers. 
-Organizers can create and manage events, while customers can browse and register for events.  
+Organizers can create and manage events, while customers can browse and register for events. 
 
-<---- Features ---->
+## Features
 
 ### Organizer
 - **Create Event**: Organizers can create new events.
@@ -34,7 +34,7 @@ Organizers can create and manage events, while customers can browse and register
 - **JSON Web Token (JWT)**: For authentication and authorization.
 - **MongoDB**: Database for storing data.
 
-<------------ Getting Started ------------>
+ 
 
 ## Usage
 
@@ -51,4 +51,4 @@ Visit the deployed application --> [here](https://eventcrafter-frontend.onrender
 2. **Browse events** from various organizers.
 3. **Register for events** you are interested in.
  
-Thank you for using EventCrafter!
+#### Thank you for using EventCrafter!
